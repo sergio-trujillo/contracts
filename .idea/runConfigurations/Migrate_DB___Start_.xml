@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Migrate DB &amp; Start " type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.aconex.cost.contract.PrimaryApplication" />
+    <module name="contract" />
+    <option name="PROGRAM_PARAMETERS" value="server src/main/resources/app.yml" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="Migrate DB" run_configuration_type="Application" />
+    </method>
+  </configuration>
+</component>

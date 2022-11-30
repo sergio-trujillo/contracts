@@ -1,0 +1,43 @@
+
+database:
+
+  # the name of your JDBC driver
+  driverClass: org.h2.Driver
+
+  # the username
+  user: sa
+
+  # the password
+  password: sa
+
+  # the JDBC URL
+  url: jdbc:h2:./target/contract_data
+
+server:
+#  softNofileLimit: 1000
+#  hardNofileLimit: 1000
+  rootPath: /api/
+  applicationConnectors:
+    - type: http
+      port: 9090
+  adminConnectors:
+    - type: http
+      port: 9091
+
+# Logging settings.
+logging:
+
+  level: INFO
+
+  # Logger-specific levels.
+  loggers:
+
+    com.aconex.cost: DEBUG
+
+    org.hibernate.SQL:
+      level: DEBUG
+
+  appenders:
+    - type: console
+      target: stdout
+      threshold: ALL

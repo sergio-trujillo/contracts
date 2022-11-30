@@ -1,0 +1,5 @@
+.idea/*
+!.idea/runConfigurations
+target
+*.iml
+dependency-reduced-pom.xml
